@@ -85,6 +85,24 @@ describe('application logic', () => {
         entries: List.of('127 Hours', 'Trainspotting', '28 Days Later')
       }));
     });
+
+    it('marks winner when just one entry left', () => {
+      const state = Map({
+        vote: Map({
+          pair: initialMovies,
+          tally: Map({
+            'Trainspotting': 4,
+            '28 Days Later': 2
+          })
+        }),
+        entries: List()
+      });
+      expect(next(state)).to.equal(Map({
+        winner: 'Trainspotting'
+      }));
+    });
+
+
   });
 
   describe('vote', () => {
