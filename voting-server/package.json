@@ -20,7 +20,7 @@
   "scripts": {
     "start": "babel-node index.js",
     "test": "mocha --compilers js:babel-core/register --recursive --require ./test/test_helper.js",
-    "test:watch": "yarn test -- -- watch"
+    "test:watch": "yarn test -- --watch --watch-extensions jsx"
   },
   "babel": {
     "presets": ["es2015"]
