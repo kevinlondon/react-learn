@@ -1,0 +1,3 @@
+# Learn Raw React — no JSX, no Flux, no ES6, no Webpack…
+
+Follows http://jamesknelson.com/learn-raw-react-no-jsx-flux-es6-webpack/
